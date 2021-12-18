@@ -23,3 +23,7 @@ class Paddle(Turtle):
             self.y_pos -= 20
             self.goto(self.x_pos, self.y_pos)
 
+    def respawn(self):
+        self.y_pos = 0
+        self.goto(self.x_pos, self.y_pos)
+

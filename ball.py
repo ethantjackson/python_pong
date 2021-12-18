@@ -17,4 +17,9 @@ class Ball(Turtle):
         self.pos_y += self.vel_y
         self.goto(self.pos_x, self.pos_y)
 
+    def respawn(self):
+        self.pos_x = 0
+        self.pos_y = 0
+        self.vel_x = 2 if self.vel_x < 0 else -2
+        self.vel_y = -self.vel_y
 
